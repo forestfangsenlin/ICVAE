@@ -42,7 +42,7 @@ and the **ICVAE_2prop_gen.ipynb** is the ICVAE model that using two molecular pr
 
 For training each molecular property, you can run after just change the condition input path into correspond molecular property.
 
-# References
+## References
 Portions of the code have been re-used from the following repositories:
  * [topazape/molecular-VAE](https://github.com/topazape/molecular-VAE)
  * [jaechanglim/CVAE](https://github.com/jaechanglim/CVAE)
