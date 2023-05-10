@@ -25,7 +25,15 @@ We recommend you to install anaconda and create a new environment by using the f
 ```
 conda create --name icvae python=3.6
 ```
-and then you can install the needed package by using the following commands:
+and then you can enter the enviroment by (windows) :
+```
+conda activate icvae
+```
+or (ubuntu) :
+```
+source activate icvae
+```
+and next, you need to install the package by:
 
 ```
 conda install numpy, matplotlib, jupyter notebook, rdkit -c rdkit
@@ -34,7 +42,12 @@ conda install numpy, matplotlib, jupyter notebook, rdkit -c rdkit
 Please note your must install the gpu support for pytorch. The detail can be found in this blog: https://medium.com/analytics-vidhya/4-steps-to-install-anaconda-and-pytorch-onwindows-10-5c9cb0c80dfe .
 
 ### 3. launch the jupyter notebook and run the code
-The ICVAE contains two main models:
+
+launch the jupyter notebook by:
+```
+jupyter notebook
+```
+Enter the ICVAE fold and The ICVAE contains two main models:
 
 **ICVAE_1prop_gen.ipynb** is the ICVAE model that using one molecular property to train and can use the latent vaiable to control the generated molecular property. 
 
