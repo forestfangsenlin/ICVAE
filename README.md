@@ -6,7 +6,7 @@ ICVAE: Interpretable conditional variational autoencoder for de novo molecular d
 
 ## Environment
 - python = 3.6.13
-- pytroch = 1.10.1
+- pytorch = 1.10.1
 - RDKit
 - numpy
 - matplotlib
