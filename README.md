@@ -40,7 +40,7 @@ The ICVAE contains two main models:
 
 and the **ICVAE_2prop_gen.ipynb** is the ICVAE model that using two molecular property to train and can use the latent vaiable to control the two generated molecular properties.
 
-For training each molecular property, you can run after just change the condition input path into correspond molecular property.
+For training each molecular property, you can just run after changing the condition input path into correspond molecular property.
 
 ## References
 Portions of the code have been re-used from the following repositories:
