@@ -5,12 +5,44 @@ ICVAE: Interpretable conditional variational autoencoder for de novo molecular d
 [![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Environment
-- python = 3.6.3
-- pytroch = 1.6.0
+- python = 3.6.13
+- pytroch = 1.10.1
 - RDKit
 - numpy
 - matplotlib
+- jupyter notebook
 
 ## How to run？
+### 1. download dataset and save in your local path
+Visit https://github.com/aksub99/molecular-vae/tree/master/ , and download the processed ZINC dataset from "data" fold. Then you can save it in your local path which contains the ICVAE code.
 
-ICVAE contains two python files, **ICVAE_1prop_gen.ipynb** is the ICVAE model that using one molecular property to train and can use the latent vaiable to control the generated molecular property, and the **ICVAE_2prop_gen.ipynb** is the ICVAE model that using two molecular property to train and can use the latent vaiable to control the two generated molecular properties.
+You should also download the normlized molecular property labels and origin labels from the "prop_np" fold.  
+
+The "prop_np" contains seven subfolds: molecular weight (weight), logP, sas, tpsa, qed, hba, hbd. In each fold,  the **y_train_norm.npy** and **y_test_norm.npy** files is the normalized molecular property value ranging from 0 to 500. We set the big normalized range to make the latent value of each property has some distance, which make the sampling process more easily to generate  smiles.
+
+### 2. set up the pytorch environment
+We recommend you to install anaconda and create a new environment by using the following command:
+```
+conda create --name icvae python=3.6
+```
+and then you can install the needed package by using the following commands:
+
+```
+conda install numpy, matplotlib, jupyter notebook, rdkit -c rdkit
+```
+
+Please note your must install the gpu support for pytorch. The detail can be found in this blog: https://medium.com/analytics-vidhya/4-steps-to-install-anaconda-and-pytorch-onwindows-10-5c9cb0c80dfe .
+
+### 3. launch the jupyter notebook and run the code
+The ICVAE contains two main models:
+
+**ICVAE_1prop_gen.ipynb** is the ICVAE model that using one molecular property to train and can use the latent vaiable to control the generated molecular property. 
+
+and the **ICVAE_2prop_gen.ipynb** is the ICVAE model that using two molecular property to train and can use the latent vaiable to control the two generated molecular properties.
+
+For training each molecular property, you can run after just change the condition input path into correspond molecular property.
+
+# References
+Portions of the code have been re-used from the following repositories:
+ * [topazape/molecular-VAE](https://github.com/topazape/molecular-VAE)
+ * [jaechanglim/CVAE](https://github.com/jaechanglim/CVAE)
