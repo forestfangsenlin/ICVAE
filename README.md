@@ -49,8 +49,6 @@ launch the jupyter notebook by:
 ```
 jupyter notebook
 ```
-Enter the ICVAE fold and The ICVAE contains two main models (note: these two files just to act as a reference, if you want to train the model, you can  run the **train.ipynb**):
-
 For training each molecular property, you can train ICVAE model by running **train.ipynb**.
 
 ### 4. how to generate the following latent image?
