@@ -1,7 +1,7 @@
 # ICVAE
 ICVAE: Interpretable conditional variational autoencoder for de novo molecular design
 
-<img src="https://github.com/forestspike/ICVAE/blob/main/image/ICVAE.jpg" width="900" />
+<img src="https://github.com/forestspike/ICVAE/blob/main/image/ICVAE.jpg" width="800" />
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-yellow.svg)](https://www.python.org/downloads/release/python-367/)
 [![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
