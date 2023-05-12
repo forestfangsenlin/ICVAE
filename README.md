@@ -51,10 +51,6 @@ jupyter notebook
 ```
 Enter the ICVAE fold and The ICVAE contains two main models (note: these two files just to act as a reference, if you want to train the model, you can  run the **train.ipynb**):
 
-**ICVAE_1prop_gen.ipynb** is the ICVAE model that using one molecular property to train and can use the latent vaiable to control the generated molecular property. 
-
-**ICVAE_2prop_gen.ipynb** is the ICVAE model that using two molecular property to train and can use the latent vaiable to control the two generated molecular properties.
-
 For training each molecular property, you can train ICVAE model by running **train.ipynb**.
 
 ### 4. how to generate the following latent image?
