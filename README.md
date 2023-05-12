@@ -61,6 +61,9 @@ you can just run the **plot_latent.ipynb** to obtain the molecular latent image.
 
 you can run the **sampling.ipynb** to generate the molecule with target property.
 
+## Issues
+Please report all installation / usage issues by opening an [issue](https://github.com/forestspike/ICVAE/issues) at this repo.
+
 ## References
 Portions of the code have been re-used from the following repositories:
  * [topazape/molecular-VAE](https://github.com/topazape/molecular-VAE)
