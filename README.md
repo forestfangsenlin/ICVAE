@@ -52,7 +52,7 @@ jupyter notebook
 For training each molecular property, you can train ICVAE model by running **train.ipynb**.
 
 ### 4. how to generate the following latent image?
-<img src="https://github.com/forestspike/ICVAE/blob/main/result/image/MW_latent.jpg" width="600" />
+
 
 you can just run the **plot_latent.ipynb** to obtain the molecular latent image.
 
