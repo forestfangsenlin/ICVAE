@@ -18,9 +18,9 @@ ICVAE: Interpretable conditional variational autoencoder for de novo molecular d
 ### 1. download dataset and save in your local path
 Visit https://github.com/aksub99/molecular-vae/tree/master/ , and download the processed ZINC dataset from "data" fold. Then you can save it in your local path which contains the ICVAE code.
 
-You should also download the normlized molecular property labels and origin labels from the "prop_np" fold.  
+You should also download the **normalized molecular property labels** and **origin property labels** from the "prop_np" fold.  
 
-The "prop_np" contains seven subfolds: molecular weight (weight), logP, sas, tpsa, qed, hba, hbd. In each fold,  the **y_train_norm.npy** and **y_test_norm.npy** files is the normalized molecular property value ranging from 0 to 500. We set the big normalized range to make the latent value of each property has some distance, which make the sampling process more easily to generate  smiles.
+The "prop_np" file contains seven subfolds: molecular weight (weight), logP, sas, tpsa, qed, hba, hbd. In each fold,  the **y_train_norm.npy** and **y_test_norm.npy** files is the normalized molecular property value ranging from 0 to 500. We set the big normalized range to make the latent value of each property has some distance, which make the sampling process more easily to generate  smiles.
 
 ### 2. set up the pytorch environment
 We recommend you to install anaconda and create a new environment by using the following command:
